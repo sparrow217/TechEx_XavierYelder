@@ -35,7 +35,7 @@ public class MyServlet extends HttpServlet {
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
 			System.out.println("JDBC Driver?");
-			e.printStackTrace();
+			
 			return;
 		}
 		response.getWriter().println(" JDBC Driver Registered!<br>");
