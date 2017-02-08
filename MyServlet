@@ -53,8 +53,7 @@ public class MyServlet extends HttpServlet {
 			System.out.println("Connection Error");
 		}
 		try {
-			String selectSQL = "SELECT * FROM myTable WHERE ITEMNUMBER LIKE ?";
-			String universalCode = "user%";
+			
 			response.getWriter().println(selectSQL + "<br>");
 			response.getWriter().println("------------------------------------------<br>");
 			PreparedStatement preparedStatement = connection.prepareStatement(selectSQL);
